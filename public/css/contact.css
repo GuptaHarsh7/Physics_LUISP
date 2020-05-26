@@ -1,0 +1,378 @@
+ 
+#our-team-title
+{
+    position: relative;
+    
+    font-weight: 300; 
+    margin-top: 5%;
+    margin-left: 37%;
+    font-size: 4vw;
+    color: #414141;
+}
+
+/* Header Styling*/
+#logo {
+	width: 140px;
+	height: 55px;
+	padding-left: 0.3rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.2rem;
+}
+
+#navbarBrand {
+	background: #292E49;
+	height: 80px;
+}
+
+#navbarHeader {
+	color: white;
+}
+
+#navbarHeader div:nth-of-type(2){
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+#navbarHeader div:nth-of-type(1){
+	font-family: "Anton", sans-serif;
+}
+
+.navbar {
+	padding: 0rem;
+	margin: 0;
+	font-size: 1rem;
+	background: #FFEFBA;
+}
+
+.navbar .nav-item a {
+	font-family: "Georgia", serif;
+	color: #292E49;
+	font-weight:500;
+	transition: all 1.4s;
+}
+
+.navbar .nav-item a:before,
+.navbar .nav-item a:after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.navbar .nav-item a:before {
+	text-align: left;
+	content: '[';
+	margin-right: 3px;
+	opacity: 0;
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+.navbar .nav-item a:after {
+	text-align: left;
+	content: ']';
+	margin-left:3px;
+	opacity: 0;
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.navbar .nav-item a:hover {
+	color: white;
+	background: #292E49;
+	z-index: 1;
+}
+
+.navbar .nav-item a:hover:after {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+  	-moz-animation: fill 1s forwards;
+  	opacity: 1;
+  	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.navbar .nav-item a:hover:before {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+  	-moz-animation: fill 1s forwards;
+  	opacity: 1;
+  	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/* Header Styling end*/
+
+
+body {
+	background: #FFFFFF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron {
+	height: 350px;
+	/*background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/14406563763.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+
+/*- - - - - - C O N T A C T - C A R D S - - - - - */
+
+#our-team-title
+{
+	margin-left: 36.1%;
+	margin-top: 5%;
+	font-size: 500%;
+	color: #000000;
+
+}
+
+#line
+{
+	margin-left: 32%;
+}
+
+.card{
+  	height: 220%;
+	width: 24%; /* ? Size - Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin-left: 35%;
+	box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.1);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding-bottom: 3%;
+}
+
+	.card:first-of-type{
+		margin-right: 25px;
+	}
+
+.card_Banner{
+	height: 170px;
+	width: inherit;
+	padding-top: 15%;
+	background-size: cover;
+  	width:100%;
+	background-position: center;
+	padding-bottom: 30%;
+	margin-bottom: 40%;
+}
+
+	.card:nth-child(1) .card_Banner{
+		background-image: url("https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5257b32f41a8a970f1b644c88174cee5&auto=format&fit=crop&w=1352&q=80");
+	}
+
+.card_Avatar{
+	height: 160px;
+	width: 55%;
+	margin-top: 90px;
+	margin-left: 4%;
+	margin-bottom: -50%;
+	border-radius: 100%;
+	margin-top: 6%;
+	background-image: url("image.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: #F1F1F1;
+	border: 3px solid #FFFFFF;	 
+	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    }
+
+  /* Detail's styling */
+
+ .team-name
+ {
+ 	font-size: 290%;
+ 	margin-top:-10%; 
+ 	color: #0000FF;
+ 	font-family: roboto, arial;
+ }
+
+ .team-bio
+ {
+ 	font-size: 150%;
+ 	color: #000000;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	font-style: italic;
+ 	padding-top: 2%;
+ }
+
+ .team-contact
+ {
+ 	margin-top: 5%;
+ 	margin-bottom: -7%;
+ 	border-width: 20px solid #000000;
+ }
+
+ /* icon styling */ 
+ .email-tile
+ {
+ 	border-width: 5px solid #000000;
+ 	padding-right: 3%;
+ 	margin-left: 25%;
+ 	display: inline-block;
+ 	width: 20%;
+
+ }
+
+.phone-tile
+ {
+ 	margin-left: 3%;
+ 	display: inline-block;
+ 	width: 17%;
+ }  
+
+
+
+/* CONTACT US*/
+
+ .contact .info-box {
+  margin-top: 5%;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #e96b56;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fef5f4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  margin-top: 2%;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+  background-color: #e96b56;
+}
+
+.contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #e96b56;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #e6573f;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+	
+
+
+
+
