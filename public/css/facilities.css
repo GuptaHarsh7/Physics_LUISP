@@ -28,7 +28,7 @@
 	padding: 0rem;
 	margin: 0;
 	font-size: 1rem;
-	background: #FFEFBA;
+	background:#FFE58f;
 }
 
 .navbar .nav-item a {
@@ -97,9 +97,10 @@
 /* Header Styling end*/
 
 html,body {
-	background: #FFEFBA;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #FFFFFF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -158,6 +159,19 @@ html,body {
 	margin-bottom: 3rem;
 }
 
+h1{
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 300;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+hr{
+	margin-bottom: 2rem;
+}
+
 h2{
 	text-transform: uppercase;
 	font-size: 2rem;
@@ -173,6 +187,10 @@ h3{
 p{
 	margin: 0 10rem;
 	font-size: 1rem;
+}
+
+.p__first{
+	margin-bottom: 20px;
 }
 
 .container {
@@ -216,7 +234,7 @@ p{
     box-shadow: 0 0 30px 7.5px rgba(0, 0, 0, 0.2);
 }
 
-.marker{
+/* .marker{
 	position: absolute;
 	bottom: 0;
 	display: flex;
@@ -229,7 +247,7 @@ p{
 	font-size: 15px;
 	margin: 5px;
 	padding: 5px 10px;
-}
+} */
 
 /* Buttons */
 .button {

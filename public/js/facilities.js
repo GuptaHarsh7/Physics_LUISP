@@ -1,5 +1,3 @@
-
-
 const images = ['newtons_rings.jpg', 'grating_setup.jpg', 'spectrometer_setup.jpg'];
 const contents = ["Newton's rings", 'Grating setup', 'Spectrometer setup'];
 
