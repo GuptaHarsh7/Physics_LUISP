@@ -96,19 +96,14 @@
 
 /* Header Styling end*/
 
-.jumbotron {
-	height: 350px;
-	background-image: url("jumbotronimg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
+
 
 body {
 	background: #FFFFFF;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -137,26 +132,24 @@ body {
 }
 
 #facebook {
-	top: 230px;
+	top: 0;
 }
 #instagram {
-	top: 285px;
+	top: 8%;
 }
 #twitter {
-	top: 340px;
+	top: 16%;
 }
 #linkedin {
-	top: 395px;
+	top: 24%;
 }
 #youtube {
-	top: 450px;
+	top: 32%;
 }
 
 #aboutsection {
 	font-family: "Open Sans Condensed", sans-serif;
 	font-size: 20px;
-    font-color: #292E49;
+    /* color: #292E49; */
 }
 /* Sidenav styling ends*/
-`
-
