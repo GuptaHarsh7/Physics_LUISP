@@ -1,23 +1,17 @@
-#our-team-section
+ #our-team-section
 {
     width: 100%;
-    background: #FFFFFF;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    position: absolute;
     z-index: 5;
+    position: absolute;
     padding-bottom: 25%;
-    background-image: url("Images/bg13.png");
-    /* background-color: #F5F5F5; */
-}
+ } 
 
 #our-team-title
 {
     position: relative;
     font-family: 'Lato', sans-serif;
     font-weight: 300; 
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 37%;
     font-size: 4vw;
     color: #414141;
@@ -160,3 +154,4 @@
 {
 	background-color: #E6E6E6;
 }
+
