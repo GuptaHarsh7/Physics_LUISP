@@ -2,7 +2,7 @@
 {
     width: 100%;
     z-index: 5;
-    position: absolute;
+    position: inherit;
     padding-bottom: 25%;
  } 
 

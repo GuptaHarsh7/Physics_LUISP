@@ -16,53 +16,9 @@
   </head>
   <body>
 
-   <!-- Header -->
-      <div id="navbarBrand" class="d-flex flex-row">
-         <div class="mt-3 mb-3 ml-0 pl-3 pr-1 pl-md-3 pr-0 mt-md-3 mb-md-2 col-6 justify-content-start">
-            <a href="https://www.lnmiit.ac.in/">
-               <span class="Logo">
-                   <img id="logo"src="./media/logo.png">
-               </span>
-            </a>
-         </div>
-         <div id="navbarHeader"class="d-flex col-6 flex-column align-items-end">
-            <div class="pr-0 pr-sm-3 pt-3"><h4><i class="fas fa-atom d-none d-md-inline"></i> Classical Physics</h4></div>
-            <div class="pr-2 pt-0 mt-0 pb-2">Department of physics, LNMIIT Jaipur</div>
-         </div>
-      </div>
-
-   <nav class="navbar navbar-expand-md sticky-top">
-      <div class="container-fluid p-0 d-flex flex-row">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                     <span><i class="fas fa-list-alt pl-1"></i></span>
-               </button>
-               <div id="navbar" class="collapse navbar-collapse ">
-
-                 <ul class="navbar-nav mt-2 mt-lg-0">
-                  <li class="nav-item active">
-                    <a class=" pr-3 nav-link" href="/"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link pr-3" href="/lectures"><i class="fas fa-book-reader"></i> Lectures</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link pr-3" href="/resources"><i class="fas fa-cog"></i> Resources</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link pr-3" href="/faculty"><i class="fas fa-chalkboard-teacher"></i> Faculty</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link pr-3" href="/Facilities"><i class="fas fa-microscope"></i> Facilities</a>
-                  </li>
-                   <li class="nav-item">
-                     <a class="nav-link pr-3" href="/contact"><i class="far fa-address-book pr-1"> </i>Contact</a>
-                   </li>
-                 </ul>
-
-               </div>
-      </div>
-   </nav>
-   <!-- header -->
+	  <!-- navbar -->
+   <%- include("./partials/header.ejs")  %>
+	  <!-- navbar -->
 
 
    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
@@ -87,7 +43,6 @@
     </div>
 
 
-   <!--   Hoverable Sidenav -->
    <div class="row">
      <div class="col-2"></div>
       <!-- About section -->
@@ -97,33 +52,14 @@
       </div>
       <div class="col-2"></div>
    </div>
+	
+	
    <!--   Hoverable Sidenav -->
-   <div class="row">
-      <div class="sidenav col-2 d-flex flex-column" id="mySidenav">
-            <a href="https://www.facebook.com/lnmiit.ac.in/" id="facebook"class="d-none d-md-block">
-               Facebook
-              <i class=" fab fa-facebook-square"></i>
-            </a>
-            <a href="https://www.instagram.com/lnmiit/" id="instagram"
-            class="d-none d-md-block">
-              Instagram
-              <i class=" fab fa-instagram-square"></i>
-            </a>
-            <a href="https://twitter.com/lnmiit_jaipur?lang=en" id="twitter" class="d-none d-md-block">
-              Twitter
-              <i class=" fab fa-twitter-square"></i>
-            </a>
-            <a href="https://in.linkedin.com/school/the-lnm-institute-of-information-technology/" id="linkedin" class="d-none d-md-block">
-              linkedin
-              <i class=" fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCBndW-qun8prPOmq5kRFbjw" id="youtube" class="d-none d-md-block">
-              YouTube
-              <i class=" fab fa-youtube-square"></i>
-            </a>
-      </div>
-    </div>
+		
+	<%- include("./partials/sidenav.ejs")  %>
   
+	
+	
   <!-- ======= Time-Table Section ======= -->
 <section id="contact" class="contact">
   <hr style="border-color:#5B838A;width:16%;">
@@ -232,36 +168,9 @@
      </section><!-- End Contact Section -->
 
     
-    <footer>
-        <div class="justify-content-around row flex-column align-items-center flex-md-row mb-0">
-            <div class="col-4 col-md-8">
-              <a href="https://www.lnmiit.ac.in/">
-                <img id="logofooter" src="./media/logo.png">
-              </a>
-            </div>
-
-              <div class="col-8 col-md-4" id="bottoma">
-                <a href="/">ABOUT</a>
-                <a href="/faculty">FACULTY</a>
-                <a href="/resources">RESOURCES</a>
-                <a href="/contact">CONATCT</a>
-              </div>
-
-        </div>
-        <hr/>
-        <div class="row flex-column align-items-center flex-md-row mt-0">
-          <div class="col-9 px-0" id="copyright">
-              <p> Copyright @2019-2020 Department of Physics, LNMIIT.</p>
-          </div>
-          <div class="col-3 px-0" id="footericons">
-              <a href="https://www.facebook.com/lnmiit.ac.in/" id="facebook"><i class="fab fa-facebook-square"></i></i></a>
-              <a href="https://www.instagram.com/lnmiit/"><i class="fab fa-instagram"></i></a>
-              <a href="https://twitter.com/lnmiit_jaipur?lang=en"><i class="fab fa-twitter-square"></i></a>
-              <a href="https://in.linkedin.com/school/the-lnm-institute-of-information-technology/" id="linkedin"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.youtube.com/channel/UCBndW-qun8prPOmq5kRFbjw"><i class="fab fa-youtube-square"></i></a>
-          </div>
-        </div>
-    </footer>
+   <!-- footer -->
+	<%- include("./partials/footer.ejs")  %>
+   <!-- footer -->
 
 
 
