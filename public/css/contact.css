@@ -175,17 +175,18 @@ body {
 
 #our-team-title
 {
-	margin-left: 37%;
-	margin-top: 2%;
+	margin-left: 39%;
+	margin-top: 1%;
 	font-size: 400%;
-	
+	display: center;
+	justify-content: center;
 
 }
 
-#line
+/* #line
 {
-	margin-left: 28%;
-}
+	margin-left: 25%;
+} */
 
 .card{
   	height: 220%;
