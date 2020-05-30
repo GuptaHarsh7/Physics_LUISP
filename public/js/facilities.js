@@ -43,3 +43,17 @@ const changeImage = event => {
 elements.button.forEach(node => {
     node.addEventListener('click', changeImage);
 });
+
+/*Nav*/
+$(document).ready(function() {
+    $(window).scroll(function(){
+        let position = $(this).scrollTop();
+        
+        if(position>=80){
+            $('.navbar').addClass('navtop');
+        }
+        else{
+            $('.navbar').removeClass('navtop');
+        }
+    })
+  });
