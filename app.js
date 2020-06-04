@@ -23,7 +23,7 @@ app.get("/Facilities",function(req,res){
 });
 
 app.get("/lectures",function(req,res){
-    res.render("coming soon");
+    res.render("lecture");
 });
 
 app.get("/resources",function(req,res){
