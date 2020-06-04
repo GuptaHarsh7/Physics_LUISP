@@ -1,5 +1,5 @@
 {
-    const folder = 'docs';
+    const folder = './docs';
     const ext = 'pdf';
     
     const pdfs = [
@@ -31,7 +31,7 @@
             <a href="${filename}" target="_blank" class="lecture__link">
                 <canvas id="the-canvas--${index + 1}"></canvas>
                 <div class="lecture__content">
-                    <img class="lecture__logo" src='img/pdf.png'>
+                    <img class="lecture__logo" src='./media/pdf.png'>
                     <p class="lecture__name lecture__name--${index + 1}">  </p>
                     <p class="lecture__page lecture__page--${index + 1}">  </p>
                 </div>
