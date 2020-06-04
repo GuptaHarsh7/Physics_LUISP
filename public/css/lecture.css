@@ -2,9 +2,9 @@
 #logo {
 	width: 140px;
 	height: 55px;
-	padding-left: 0.3rem;
+	/*padding-left: 0.3rem;
 	padding-bottom: 0.5rem;
-	padding-top: 0.2rem;
+	padding-top: 0.2rem;*/
 }
 
 #navbarBrand {
@@ -28,7 +28,7 @@
 	padding: 0rem;
 	margin: 0;
 	font-size: 1rem;
-	background: #FFEFBA;
+	background: #FFE58F;
 }
 
 .navbar .nav-item a {
