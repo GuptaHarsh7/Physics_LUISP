@@ -1,0 +1,250 @@
+/* Header Styling*/
+#logo {
+	width: 140px;
+	height: 55px;
+	/* padding-left: 0.3rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.2rem; */
+}
+
+#navbarBrand {
+	background: #292E49;
+	height: 80px;
+}
+
+#navbarHeader {
+	color: white;
+}
+
+#navbarHeader div:nth-of-type(2){
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+#navbarHeader div:nth-of-type(1){
+	font-family: "Anton", sans-serif;
+}
+
+.navbar {
+	padding: 0rem;
+	margin: 0;
+	font-size: 1rem;
+	background:#FFE58f;
+}
+
+.navbar .nav-item a {
+	font-family: "Georgia", serif;
+	color: #292E49;
+	font-weight:500;
+	transition: all 1.4s;
+}
+
+.navbar .nav-item a:before,
+.navbar .nav-item a:after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.navbar .nav-item a:before {
+	text-align: left;
+	content: '[';
+	margin-right: 3px;
+	opacity: 0;
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+.navbar .nav-item a:after {
+	text-align: left;
+	content: ']';
+	margin-left:3px;
+	opacity: 0;
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.navbar .nav-item a:hover {
+	color: white;
+	background: #292E49;
+	z-index: 1;
+}
+
+.navbar .nav-item a:hover:after {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+  	-moz-animation: fill 1s forwards;
+  	opacity: 1;
+  	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.navbar .nav-item a:hover:before {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+  	-moz-animation: fill 1s forwards;
+  	opacity: 1;
+  	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/* Header Styling end*/
+
+html,body {
+	background: #FFFFFF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+/* Sidenav styling*/
+#mySidenav a {
+	color: #292E49;
+	position: fixed;
+	left: -120px;
+	transition: 0.3s;
+	padding: 8px;
+	margin-top: 35vh;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 21px;
+	color: black;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #292E49;
+	text-align: right;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  background-color: #292E49;
+  color: white;
+}
+
+#facebook {
+	top: 0;
+}
+#instagram {
+	top: 8%;
+}
+#twitter {
+	top: 16%;
+}
+#linkedin {
+	top: 24%;
+}
+#youtube {
+	top: 32%;
+}
+
+#aboutsection {
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 20px;
+    /* color: #292E49; */
+}
+/* Sidenav styling ends*/
+
+
+h1{
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 300;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+hr{
+	margin-bottom: 2rem;
+}
+
+.card-header{
+	font-size: 2rem;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #292E49;
+	display: flex;
+	justify-content: center;
+	/* margin-bottom:2rem; */
+}
+
+/* CONTACT US*/
+
+ .contact .info-box {
+  margin-top: 5%;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #e96b56;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fef5f4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.btn{
+	color: #292E49;
+	font-weight: 100;
+border: 2px solid #292E49;
+	transition: all 0.3s;
+background: #FFFFFF;
+}
+
+.btn:hover {
+	color: #FFEFBA;
+	background: #292E49;
+	border: 2px solid #292E49;
+	letter-spacing: 1px;
+	font-weight: 800;
+}
+
+
+#video_section .col-md-4{
+  margin-top: 2rem;
+ 
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+#video_section {
+	max-width: 1340px;
+}
+
+#video_section p{
+	padding-top: 10px;
+	line-height: 24px;
+  	font-size: 14px;
+  	margin-bottom: 0;
+}

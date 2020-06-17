@@ -27,7 +27,7 @@ app.get("/lectures",function(req,res){
 });
 
 app.get("/resources",function(req,res){
-    res.render("coming soon");
+    res.render("resources");
 });
 
 app.listen(process.env.PORT,process.env.IP,function(){

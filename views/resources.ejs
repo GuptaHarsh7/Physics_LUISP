@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Meet Our Team</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/resources.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="./media/favicon.jpg">
+	
+</head>
+<body>
+	
+<!-- partial:index.partial.html -->
+	<!-- navbar -->
+	<%- include("./partials/header.ejs") %>
+	
+	
+	<!-- sidenav -->
+	<%- include("./partials/sidenav.ejs")  %>
+	<!-- sidenav -->
+	
+	<h1>Resources</h1>
+	
+	<hr style="border-color:#5B838A;width:16%;">
+	<div class="container" id="video_section">
+		<h2>
+			Videos
+		</h2>
+		<div class="row" >
+			<div class="col-md-4">
+			<iframe width="320" height="215" src="https://www.youtube.com/embed/XPUuF_dECVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>
+					Gyroscope 
+				</p>
+		</div>
+		<div class="col-md-4">
+			<iframe width="320" height="215" src="https://www.youtube.com/embed/fDJeVR0o__w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>
+					Rotational Motion
+				</p>
+		</div>
+		<div class="col-md-4">
+<iframe width="320" height="215" src="https://www.youtube.com/embed/l7o6FN7rsb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				<p>
+					Lagrangian
+				</p>
+		</div>
+		</div>
+		
+		
+		<div class="row" >
+			<div class="col-md-4">
+<iframe width="320" height="215" src="https://www.youtube.com/embed/mWj1ZEQTI8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				<p>
+					Circular Motion
+				</p>
+		</div>
+		<div class="col-md-4">
+<iframe width="320" height="215" src="https://www.youtube.com/embed/Z07tTuE1mwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>
+                	Weight and realted topics
+				</p>
+		</div>
+		<div class="col-md-4">
+<iframe width="320" height="215" src="https://www.youtube.com/embed/FWh-enOdXM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				<p>
+					Friction
+				</p>
+		</div>
+		</div>
+		
+	</div>
+      
+	
+	 <!-- ======= Contact Section ======= -->
+     <section id="contact" class="contact">
+       <hr style="border-color:#5B838A;width:16%;">
+       <div class="container">
+		<h2>
+			Extra
+		   </h2>
+         <div class="row">
+           <div class="col-lg-6">
+             <div class="info-box mb-4">
+               <i class="fab fa-google-drive"></i>
+               <h3>Google Drive Folder</h3>
+               <img src="./media/drive.jpg" class="rounded mx-auto d-block">
+               <p><br>Drive link to notes and resources shared by the seniors.<br><br></p>
+               <a href="https://drive.google.com/drive/folders/1oj-T1oKX89msgUm8zTnpngIBtjG4wT8w?usp=sharing" class="btn">CLICK</a>
+             </div>
+           </div>
+
+           <div class="col-lg-6 ">
+             <div class="info-box  mb-4">
+                <i class="fab fa-github"></i>
+              <h3>Resouces on Github</h3>
+               <img src="./media/github.jpg" class="rounded mx-auto d-block">
+               <p><br>Github link to repository holding old papers and other stuff<br><br></p>
+               <a href="https://github.com/OpenSouce-LNMIIT/paper.lnmiit" class="btn">CLICK</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section><!-- End Contact Section -->
+	
+
+	
+	<%- include("./partials/footer.ejs")  %>
+<!-- partial -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/Home.js"></script>
+	
+	<script src="./js/resources.js"></script>
+	
+</body>
+	
+</html>
+
+
