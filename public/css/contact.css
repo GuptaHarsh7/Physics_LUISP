@@ -1,14 +1,5 @@
  
-#our-team-title
-{
-    
-    
-    font-weight: 300; 
-    margin-top: 2%;
-    margin-left: 37%;
-    font-size: 4vw;
-    color: #414141;
-}
+
 
 /* Header Styling*/
 #logo {
@@ -175,18 +166,19 @@ body {
 
 #our-team-title
 {
-	margin-left: 39%;
-	margin-top: 1%;
-	font-size: 400%;
-	display: center;
-	justify-content: center;
-
+    
+    
+    font-weight: 300; 
+    margin-top: 2%;
+    text-align: center;
+    font-size: 3rem;
+    color: #414141;
 }
 
-/* #line
+#line
 {
-	margin-left: 25%;
-} */
+	margin-left: 28%;
+}
 
 .card{
   	height: 220%;
@@ -319,3 +311,6 @@ body {
   margin-bottom: 0;
 }
 
+iframe {
+	width: 90%;
+}
