@@ -239,3 +239,21 @@ canvas {
     width: 100%;
     border-bottom: 1px solid #777;
 }
+
+/* =========================================== */
+	/* navbar mobile styling */
+@media only screen and (max-width: 600px) {
+	#navbar_logo{
+		display:none;
+	}
+	#navbarHeader h4{
+		font-size: 1.5rem;
+	}
+	#main_heading{
+		margin: auto;
+	}
+	#sub_heading{
+		margin: auto;
+	}
+}
+/* ============================================== */

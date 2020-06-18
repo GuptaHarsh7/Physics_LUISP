@@ -68,3 +68,35 @@ hr {
 	 -webkit-transition-duration: 0.8s;
      -moz-transition-duration: 0.8s;
 }
+
+#footer_show{
+	display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+	#footer_hide{
+		display: none;
+	}
+	#footer_show{
+		display: block;
+	}
+	#logofooter{
+		margin-left: auto;
+		margin-top: auto;
+	}
+	#copyright{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	#copyright p{
+		margin-left: inherit;
+		margin-top: 1rem;
+		margin-right: inherit;
+		text-align: center;
+	}
+	footer{
+		padding-top: 1rem; 
+	}
+}
