@@ -316,7 +316,12 @@ overflow-x: hidden;
   }
 }
 
-
-
-
+.team-member{
+  margin-top: 2rem;
+  max-width: 1340px;
+  color: #353434;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(149, 150, 151, 0.6);
+  padding: 20px 0 30px 0;
+}
 
