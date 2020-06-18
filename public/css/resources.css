@@ -252,7 +252,7 @@ background: #FFFFFF;
 /* =========================================== */
 	/* navbar mobile styling */
 @media only screen and (max-width: 600px) {
-	#navbar_logo{
+    #navbar_logo{
 		display:none;
 	}
 	#navbarHeader h4{
