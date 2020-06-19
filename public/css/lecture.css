@@ -1,153 +1,150 @@
 /* Header Styling*/
 #logo {
-	width: 140px;
-	height: 55px;
-	/*padding-left: 0.3rem;
-	padding-bottom: 0.5rem;
-	padding-top: 0.2rem;*/
+    width: 140px;
+    height: 55px;
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
 }
 
 #navbarBrand {
-	background: #292E49;
-	height: 80px;
+    background: #292e49;
+    height: 80px;
 }
 
 #navbarHeader {
-	color: white;
+    color: white;
 }
 
-#navbarHeader div:nth-of-type(2){
-	font-family: "Open Sans Condensed", sans-serif;
+#navbarHeader div:nth-of-type(2) {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#navbarHeader div:nth-of-type(1){
-	font-family: "Anton", sans-serif;
+#navbarHeader div:nth-of-type(1) {
+    font-family: 'Anton', sans-serif;
 }
 
 .navbar {
-	padding: 0rem;
-	margin: 0;
-	font-size: 1rem;
-	background: #FFE58F;
+    padding: 0rem;
+    margin: 0;
+    font-size: 1rem;
+    background: #ffefba;
 }
 
 .navbar .nav-item a {
-	font-family: "Georgia", serif;
-	color: #292E49;
-	font-weight:500;
-	transition: all 1.4s;
+    font-family: 'Georgia', serif;
+    color: #292e49;
+    font-weight: 500;
+    transition: all 1.4s;
 }
 
 .navbar .nav-item a:before,
 .navbar .nav-item a:after {
-	display: inline-block;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
-	transition: transform 0.3s, opacity 0.2s;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
 }
 
 .navbar .nav-item a:before {
-	text-align: left;
-	content: '[';
-	margin-right: 3px;
-	opacity: 0;
-	-webkit-transform: translateX(20px);
-	-moz-transform: translateX(20px);
-	transform: translateX(20px);
+    text-align: left;
+    content: '[';
+    margin-right: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
 }
 .navbar .nav-item a:after {
-	text-align: left;
-	content: ']';
-	margin-left:3px;
-	opacity: 0;
-	-webkit-transform: translateX(-20px);
-	-moz-transform: translateX(-20px);
-	transform: translateX(-20px);
+    text-align: left;
+    content: ']';
+    margin-left: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
 }
 
 .navbar .nav-item a:hover {
-	color: white;
-	background: #292E49;
-	z-index: 1;
+    color: white;
+    background: #292e49;
+    z-index: 1;
 }
 
 .navbar .nav-item a:hover:after {
-	z-index: -10;
-	animation: fill 1s forwards;
-	-webkit-animation: fill 1s forwards;
-  	-moz-animation: fill 1s forwards;
-  	opacity: 1;
-  	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	transform: translateX(0px);
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
 }
 
 .navbar .nav-item a:hover:before {
-	z-index: -10;
-	animation: fill 1s forwards;
-	-webkit-animation: fill 1s forwards;
-  	-moz-animation: fill 1s forwards;
-  	opacity: 1;
-  	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	transform: translateX(0px);
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
 }
 
 /* Header Styling end*/
 
-html,body {
-    background: #FFFFFF;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	width: 100%;
-	overflow-x: hidden;
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
-
 
 /* Sidenav styling*/
 #mySidenav a {
-	color: #292E49;
-	position: fixed;
-	left: -120px;
-	transition: 0.3s;
-	padding: 8px;
-	margin-top: 35vh;
-	width: 150px;
-	height: 50px;
-	text-decoration: none;
-	font-size: 21px;
-	color: black;
-	border-radius: 0 5px 5px 0;
-	border: 1px solid #292E49;
-	text-align: right;
+    color: #292e49;
+    position: fixed;
+    left: -120px;
+    transition: 0.3s;
+    padding: 8px;
+    margin-top: 35vh;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #292e49;
+    text-align: right;
 }
 
 #mySidenav a:hover {
-  left: 0;
-  background-color: #292E49;
-  color: white;
+    left: 0;
+    background-color: #292e49;
+    color: white;
 }
 
 #facebook {
-	top: 0;
+    top: 0;
 }
 #instagram {
-	top: 8%;
+    top: 8%;
 }
 #twitter {
-	top: 16%;
+    top: 16%;
 }
 #linkedin {
-	top: 24%;
+    top: 24%;
 }
 #youtube {
-	top: 32%;
+    top: 32%;
 }
 
 #aboutsection {
-	font-family: "Open Sans Condensed", sans-serif;
-	font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     /* color: #292E49; */
 }
 /* Sidenav styling ends*/
@@ -159,9 +156,9 @@ html,body {
 
 h1 {
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 300;
-    margin-top: 2rem;
+    margin-top: 32px;
     display: flex;
     justify-content: center;
 }
@@ -171,8 +168,11 @@ hr {
     margin-bottom: 30px;
 }
 
-.lecture__para{
-	margin: 0 180px 20px;
+.lectures {
+    font-size: 18px;
+}
+.lecture__para {
+    margin: 0 180px 20px;
 }
 
 .lecture__list {
@@ -184,7 +184,6 @@ hr {
     grid-gap: 30px;
 }
 
-
 .lecture__item {
     display: block;
     /* font-size: 50px; */
@@ -193,19 +192,18 @@ hr {
 }
 
 .lecture__link:link,
-.lecture__link:visited{
+.lecture__link:visited {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     border: 2px solid #aaa;
     box-shadow: 3px 3px 10px 0.1px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
     font-weight: 200;
     color: #777;
 }
 
 .lecture__link:hover,
-.lecture__link:active{
+.lecture__link:active {
     display: flex;
     flex-direction: column;
     /* text-decoration: none; */
@@ -233,14 +231,103 @@ hr {
 }
 
 .lecture__page {
+    display: inline-block;
     margin: 0;
     padding: 0 15px;
 }
-
+.lecture__img {
+    width: 100%;
+}
 canvas {
     height: auto;
     width: 100%;
     border-bottom: 1px solid #777;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 48px;
+    }
+    .lectures {
+        font-size: 15px;
+    }
+
+    .lecture__list {
+        grid-gap: 20px;
+    }
+    .lecture__item {
+        margin: 10px;
+    }
+    .lecture__logo {
+        padding: 10px;
+    }
+    .lecture__page {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 40px;
+    }
+    .lectures {
+        font-size: 12px;
+    }
+    .lecture__list {
+        grid-gap: 15px;
+        margin: 0 100px;
+    }
+    .lecture__para {
+        margin: 0 120px 20px;
+    }
+    .lecture__item {
+        margin: 5px;
+    }
+    .lecture__logo {
+        padding: 5px;
+    }
+    .lecture__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lecture__page {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    hr {
+        width: 10%;
+        margin: 15px auto;
+    }
+    .lecture__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lecture__list {
+        grid-gap: 20px;
+        margin: 0 60px;
+    }
+    .lecture__para {
+        margin: 0 80px 10px;
+    }
+
+    .lecture__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lecture__page {
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .lecture__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .lecture__page {
+        display: inline-block;
+    }
 }
 
 /* =========================================== */

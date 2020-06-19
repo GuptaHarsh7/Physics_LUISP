@@ -1,7 +1,6 @@
 {
     const folder = './docs';
     const ext = 'pdf';
-    
     const pdfs = [
         '1',
         'L-2-Plane Polar Coordinates',
@@ -21,18 +20,29 @@
         'L14-Central Force Motion',
         'L15-Harmonic Oscillator',
     ];
-    
+
     const lecture__list = document.querySelector('.lecture__list');
 
+    const limit = pdf => {
+        const len = 10;
+        if (pdf.length >= len) {
+            pdf = `${pdf.split('').slice(0, len).join('')}...`;
+            return pdf;
+        }
+        return pdf;
+    };
+
     pdfs.forEach((pdf, index) => {
-        const filename = `${folder}/${pdf}.${ext}`;
+        const filename = `./pdf/${index + 1}.jpg`;
+        const goTo = `${folder}/${pdf}.${ext}`;
         const markup = `
         <li class="lecture__item">
-            <a href="${filename}" target="_blank" class="lecture__link">
-                <canvas id="the-canvas--${index + 1}"></canvas>
+            <a href="${goTo}" target="_blank" class="lecture__link">
+                <!-- <canvas id="the-canvas--${index + 1}"></canvas> -->
+                <img src="${filename}" alt="${filename}" class="lecture__img"/>
                 <div class="lecture__content">
-                    <img class="lecture__logo" src='./media/pdf.png'>
-                    <p class="lecture__name lecture__name--${index + 1}">  </p>
+                    <img class="lecture__logo" src='img/pdf.png'>
+                    <p class="lecture__name lecture__name--${index + 1}"> ${limit(pdf)} </p>
                     <p class="lecture__page lecture__page--${index + 1}">  </p>
                 </div>
             </a>
@@ -41,40 +51,36 @@
         lecture__list.insertAdjacentHTML('beforeend', markup);
     });
 
-    const limit = pdf => {
-        const len = 15;
-        if (pdf.length >= len) {
-            pdf = `${pdf.split('').slice(0, len).join('')}...`;
-            return pdf;
-        }
-        return pdf;
-    };
-
     // Rendering pdf
     const renderPdf = async (pdf, index) => {
         try {
             const filename = `${folder}/${pdf}.${ext}`;
-            const canvas = document.querySelector(`#the-canvas--${index + 1}`);
-            const ctx = canvas.getContext('2d');
+            // const canvas = document.querySelector(`#the-canvas--${index + 1}`);
+            // const ctx = canvas.getContext('2d');
 
             // Getting doc
             const doc = await pdfjsLib.getDocument(filename).promise;
             const pages = doc.numPages;
 
             // Getting page
+            /*
             const pageNum = 1;
             const page = await doc.getPage(pageNum);
+            */
 
             // Getting viewport
+            /*
             const scale = 2;
             const viewport = page.getViewport({ scale });
-            console.log(viewport);
             canvas.height = viewport.height * 0.4;
             canvas.width = viewport.width;
+            */
 
             // Rendering to canvas
+            /*
             const renderCtx = { canvasContext: ctx, viewport };
             await page.render(renderCtx).promise;
+            */
 
             // UI
             document.querySelector(`.lecture__name--${index + 1}`).textContent = limit(pdf);

@@ -1,54 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/lecture.css">
-    <!-- <script src="https://use.fontawesome.com/9c4ab94980.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>Lectures | Classical Physics Website</title>
-    <link rel="shortcut icon" type="image/png" href="./media/favicon.jpg">
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
-  </head>
-  <body>
-
-    <!-- navbar -->
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="./css/lecture.css" />
+        <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+        <!-- <script src="https://use.fontawesome.com/9c4ab94980.js"></script> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+            rel="stylesheet"
+        />
+        <title>Lectures | Classical Physics Website</title>
+        <link rel="shortcut icon" type="image/png" href="./media/favicon.jpg" />
+    </head>
+    <body>
+         <!-- navbar -->
    <%- include("./partials/header.ejs")  %>
 	  <!-- navbar -->
 
-    <!--   Hoverable Sidenav -->
-		
-	<%- include("./partials/sidenav.ejs")  %>
-  
+         <!--   Hoverable Sidenav -->
+   <%- include("./partials/sidenav.ejs")  %>
 
-    <section class="lectures">
-      <h1>
-          Lectures
-      </h1>
-      <hr style="border-color:#5B838A;width:10%;">
-      <p class="lecture__para" style="text-align:center;">These are the handwritten notes of Amit Neogi sir.</p>
-      <div class="grid-container">
-          <ul class="lecture__list">
-          </ul>
-      </div>
-  </section>
-  
-  <%- include("./partials/footer.ejs")  %>
 
-  <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
-  <script src="./js/lecture.js"></script>
+        <section class="lectures">
+            <h1>
+                Lectures
+            </h1>
+            <hr style="border-color: #5b838a; width: 10%;" />
+            <div class="grid-container">
+                <ul class="lecture__list"></ul>
+            </div>
+        </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="Home2.js"></script> -->
-  </body>
+        <%- include("./partials/footer.ejs")  %>
+
+        <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
+        <script src="./js/lecture.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <!-- <script type="text/javascript" src="Home2.js"></script> -->
+    </body>
 </html>
