@@ -32,46 +32,43 @@
 		<h2>
 			Videos
 		</h2>
+		<% if(isLoggedIn){ %>
+			<div class="container">
+			
+				<h3>
+					Add new Video
+				</h3>
+				<form action="/resources" method="POST">
+		  			<div class="form-row align-items-center">
+						<div class="col-auto">
+			  				<input type="text" class="form-control mb-2" name="video[title]" placeholder="Title">
+						</div>
+						<div class="col-auto">
+			  				<input type="text" class="form-control mb-2" name="video[embedUrl]" placeholder="Embed URL">
+						</div>
+			  			<div class="col-auto">
+			  				<button type="submit" class="btn btn-primary mb-2">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		<% } %>
 		<div class="row" >
-			<div class="col-md-4">
-			<iframe width="320" height="215" src="https://www.youtube.com/embed/XPUuF_dECVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<% videoCollection.forEach(function(video){ %>
+			<div class="col-lg-4 col-md-6">
+				<iframe width="320" height="215" src="<%= video.embedUrl %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<p>
-					Gyroscope 
+					<%= video.title %>
 				</p>
+				<% if(isLoggedIn){ %>
+        <form action="/resources/<%= video._id %>?_method=DELETE" method="POST">
+          <button class="btn btn-danger">Delete</button>
+        </form>
+        <% } %>
+			</div>
+			<% }); %>
+			
 		</div>
-		<div class="col-md-4">
-			<iframe width="320" height="215" src="https://www.youtube.com/embed/fDJeVR0o__w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>
-					Rotational Motion
-				</p>
-		</div>
-		<div class="col-md-4">
-<iframe width="320" height="215" src="https://www.youtube.com/embed/l7o6FN7rsb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				<p>
-					Lagrangian
-				</p>
-		</div>
-		</div>
-		
-		
-		<div class="row" >
-			<div class="col-md-4">
-<iframe width="320" height="215" src="https://www.youtube.com/embed/mWj1ZEQTI8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				<p>
-					Circular Motion
-				</p>
-		</div>
-		<div class="col-md-4">
-<iframe width="320" height="215" src="https://www.youtube.com/embed/Z07tTuE1mwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>
-                	Weight and realted topics
-				</p>
-		</div>
-		<div class="col-md-4">
-<iframe width="320" height="215" src="https://www.youtube.com/embed/FWh-enOdXM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				<p>
-					Friction
-				</p>
-		</div>
-		</div>
-		
 	</div>
       
 	

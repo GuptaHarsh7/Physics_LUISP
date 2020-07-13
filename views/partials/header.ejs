@@ -39,6 +39,20 @@
                    <li class="nav-item">
                      <a class="nav-link pr-3" href="/contact"><i class="far fa-address-book pr-1"> </i>Contact</a>
                    </li>
+					 <% if(!isLoggedIn){ %>
+					<li class="nav-item">
+                     <a class="nav-link pr-3" href="/login"><i class="fas fa-sign-in-alt"></i>Faculty Login</a>
+                   </li>
+					 <%}%>
+					 
+					  <% if(isLoggedIn){ %>
+					<li class="nav-item">
+                     <a class="nav-link pr-3" href="/logout"><i class="fas fa-sign-in-alt"></i>Logout</a>
+                   </li>
+					 <%}%>
+					 
+					 
+					 
                  </ul>
 
                </div>

@@ -229,7 +229,7 @@ background: #FFFFFF;
 }
 
 
-#video_section .col-md-4{
+#video_section .col-lg-4{
   margin-top: 2rem;
  
   color: #444444;
@@ -249,20 +249,13 @@ background: #FFFFFF;
   	margin-bottom: 0;
 }
 
-/* =========================================== */
-	/* navbar mobile styling */
-@media only screen and (max-width: 600px) {
-    #navbar_logo{
-		display:none;
-	}
-	#navbarHeader h4{
-		font-size: 1.5rem;
-	}
-	#main_heading{
-		margin: auto;
-	}
-	#sub_heading{
-		margin: auto;
-	}
+.form-control{
+	width: 20rem;
 }
-/* ============================================== */
+
+form{
+	padding-left: auto;
+	padding-right: auto;
+}
+
+
