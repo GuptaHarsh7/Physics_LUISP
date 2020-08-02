@@ -118,7 +118,7 @@ app.get("/Facilities",function(req,res){
 
 app.get("/lectures",function(req,res){
 	var c = isLoggedIn(req,res);
-    res.render("lecture",{isLoggedIn: c});
+    res.render("chapters",{isLoggedIn: c});
 });
 
 app.get("/resources",function(req,res){
