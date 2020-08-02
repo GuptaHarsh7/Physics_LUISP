@@ -1,0 +1,51 @@
+.page-header {
+	text-decoration: underline;
+}
+
+section	a {
+	color: red;
+	text-decoration: underline;
+}
+section a:hover {
+	color: #212529;
+}
+
+h2 {
+	color: #212529;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight: 700;
+}
+
+
+section {
+    padding: 30px 0;
+	border-bottom: 1px solid #212529;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+div #main .container{
+	padding: 20px 20px;
+}
+div .row {
+	margin: 20px;
+	font-size: 20px;
+}
+
+ul {
+	margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	h4{
+		font-size: 1.25rem;
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h2{
+		font-size: 2rem;
+	}
+
+}
+
+
