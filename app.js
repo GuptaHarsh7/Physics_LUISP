@@ -58,7 +58,7 @@ app.get("/",function(req,res){
 
 app.get("/faculty",function(req,res){
 	var c = isLoggedIn(req,res);
-    res.render("faculty",{isLoggedIn: c});
+    res.render("faculty1",{isLoggedIn: c});
 });
 
 app.get("/contact",function(req,res){
