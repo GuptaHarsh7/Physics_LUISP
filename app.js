@@ -121,6 +121,11 @@ app.get("/lectures",function(req,res){
     res.render("chapters",{isLoggedIn: c});
 });
 
+app.get("/team",function(req,res){
+	var c = isLoggedIn(req,res);
+    res.render("team",{isLoggedIn: c});
+});
+
 app.get("/resources",function(req,res){
     var c = isLoggedIn(req,res);
 	Video.find({}, function(err,allVideos){
